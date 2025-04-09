@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Binary Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Binary Code Converter</h1>
+    <select id="modeSelector" onchange="switchMode()">
+      <option value="textToBinary">Text to Binary</option>
+      <option value="binaryToText">Binary to Text</option>
+    </select>
+    
+    <div id="textToBinaryBox">
+      <input type="text" id="textInput" placeholder="Enter word to convert to binary">
+      <button onclick="convertToBinary()">Convert</button>
+    </div>
+
+    <div id="binaryToTextBox" style="display: none;">
+      <input type="text" id="binaryInput" placeholder="Enter binary to convert to word">
+      <button onclick="convertToWord()">Convert</button>
+    </div>
+
+    <div id="output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
